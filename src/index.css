@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+/* Custom Loader Style */
+.loader {
+    border-width: 4px;
+    border-top-color: #1d4ed8; /* Tailwind Blue 600 */
+  }
+
+  .fecin-hero-bg {
+    background-color: #040720;
+  }
+
+  .navbar {
+    background-color: black;
+    padding: 10px;
+  }
+ 
+  .navbar-text {
+    font-family: "Play", serif;
+      font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    font-size: 12px;
+  }
+
+  .fecin-text {
+    font-family: "Play", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+    padding-bottom: 10px;
+  }
+
+  .logo-text {
+    font-family: "Play", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: orange;
+    font-size: 30px;
+    margin-left: 30px;
+  }

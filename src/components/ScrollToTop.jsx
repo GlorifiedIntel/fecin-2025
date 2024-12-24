@@ -1,3 +1,5 @@
+import React from 'react';
+
 const ScrollToTop = () => {
     const [visible, setVisible] = React.useState(false);
   

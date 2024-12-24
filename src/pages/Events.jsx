@@ -1,3 +1,6 @@
+import React from 'react';
+import Spinner from '../components/Spinner';
+
 const Events = () => {
   const [loading, setLoading] = React.useState(true);
   const [events, setEvents] = React.useState([]);
@@ -7,10 +10,9 @@ const Events = () => {
       setEvents([
         { id: 1, title: "Sunday Service", date: "Dec 31, 2024", description: "Join us for worship." },
         { id: 2, title: "Youth Fellowship", date: "Jan 5, 2025", description: "A gathering for youth." },
-        
       ]);
       setLoading(false);
-    }, 2000); // Simulate API call
+    }, 2000); // Simulating API delay
   }, []);
 
   if (loading) return <Spinner />;
@@ -30,3 +32,5 @@ const Events = () => {
     </div>
   );
 };
+
+export default Events;
