@@ -11,7 +11,7 @@ const Hero = () => {
         Empowering Communities Through the Translation of the Holy Bible
         </p>
         <div className="flex justify-center space-x-4">
-          <button className="bg-black hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+          <button className="fecin-button">
             Support Us
           </button>
           <button className="bg-transparent border border-white text-white hover:bg-white hover:text-blue-900 font-bold py-2 px-4 rounded">

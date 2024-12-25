@@ -4,10 +4,10 @@ const AboutFecin = () => {
   return (
     <div className="bg-gray-100 min-h-screen p-6">
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
-        <h1 className="text-4xl font-bold text-center text-blue-600 mb-4">
+        <h1 className="fecin-h1">
           About Us
         </h1>
-        <p className="text-gray-700 text-lg mb-6 leading-relaxed">
+        <p className="fecin-p">
           Welcome to the Fellowship of Eggon Christians in Nigeria (FECIN). We are a community 
           dedicated to spreading the Gospel, fostering unity, and promoting the spiritual growth 
           of believers. Our mission is to serve God by serving others, and to create a supportive 
@@ -15,7 +15,7 @@ const AboutFecin = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="bg-blue-100 p-4 rounded-md shadow-sm">
-            <h2 className="text-xl font-semibold text-blue-600 mb-2">
+            <h2 className="fecin-text-xl">
               Our Mission
             </h2>
             <p className="text-gray-700">
@@ -24,7 +24,7 @@ const AboutFecin = () => {
             </p>
           </div>
           <div className="bg-blue-100 p-4 rounded-md shadow-sm">
-            <h2 className="text-xl font-semibold text-blue-600 mb-2">
+            <h2 className="fecin-text-xl">
               Our Vision
             </h2>
             <p className="text-gray-700">
