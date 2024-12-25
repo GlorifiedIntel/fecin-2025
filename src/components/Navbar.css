@@ -1,18 +1,19 @@
 .navbar {
   background-color: #191a1b;
-  padding: 1rem;
-  padding: 16px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
+  
 }
 
 .navbar ul {
   display: flex;
-  gap: 1.5rem; 
+  gap: 1rem; 
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 .navbar a {
@@ -27,39 +28,6 @@
 
 .navbar a:hover {
   text-decoration: none;
-  color: #444; 
+  color: orange; 
 }
 
-.dropdown {
-  position: relative;
-  
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 1.5rem; 
-  background-color: #191a1b;
-  color: #444;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-  list-style: none;
-  width: 130px;
-
-}
-
-.dropdown-menu li {
-  padding: 0.5rem; 
-}
-
-.dropdown-menu li:hover {
-  background-color: orange; 
-}
-
-.dropdown-menu li a:hover {
-  color: black; 
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
