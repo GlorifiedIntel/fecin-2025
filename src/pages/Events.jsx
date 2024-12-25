@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getEvents } from '../services/api';
 import Spinner from '../components/Spinner';
 
 const Events = () => {
-  const [loading, setLoading] = React.useState(true);
-  const [events, setEvents] = React.useState([]);
+  const [loading, setLoading] = useState(true);
+  const [events, setEvents] = useState([]);
 
-  React.useEffect(() => {
-    setTimeout(() => {
-      setEvents([
-        { id: 1, title: "Sunday Service", date: "Dec 31, 2024", description: "Join us for worship." },
-        { id: 2, title: "Youth Fellowship", date: "Jan 5, 2025", description: "A gathering for youth." },
-      ]);
-      setLoading(false);
-    }, 2000); // Simulating API delay
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        const data = await getEvents();
+        setEvents(data);
+      } catch (error) {
+        console.error('Failed to load events:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEvents();
   }, []);
 
   if (loading) return <Spinner />;
